@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>hello word</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .box1 > div {
+            width: 300px;
+            height: 300px;
+        }
+
+        .box1 {
+            width: 300px;
+            height: 300px;
+            margin: 200px auto;
+            position: relative;
+            transform-style: preserve-3d;
+            transform: rotateX(20deg) rotateY(20deg);
+            transition: all 5s;
+            animation: zhao  5s infinite linear ;
+        }
+
+        .box1 div {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .top {
+            transform: rotateX(90deg) translateZ(150px);
+            background-color: rgba(255, 14, 5, 0.5);
+        }
+
+        .bottom {
+            transform: rotateX(-90deg) translateZ(150px);
+            background-color: rgba(255, 189, 22, 0.5);
+        }
+
+        .left {
+            transform: rotateY(90deg) translateZ(150px);
+            background-color: rgba(183, 255, 33, 0.5);
+        }
+
+        .right {
+            transform: rotateY(-90deg) translateZ(150px);
+            background-color: rgba(51, 255, 27, 0.5);
+        }
+
+        .font {
+            transform: translateZ(150px);
+            background-color: rgba(19, 245, 255, 0.5);
+        }
+
+        .back {
+            transform: rotateY(180deg) translateZ(150px);
+            background-color: rgba(22, 31, 255, 0.5);
+        }
+
+        .box2 > div {
+            width: 150px;
+            height: 150px;
+        }
+
+        .box2 {
+            width: 150px;
+            height: 150px;
+            /*position: relative;*/
+            transform-style: preserve-3d;
+            transition: all 5s;
+            position: absolute;
+
+        }
+
+        .box2 div {
+            position: absolute;
+              top: 50%;
+            left: 50%;
+            margin-left: -75px;
+            margin-top: -75px;
+
+        }
+
+        .top2 {
+            transform: rotateX(90deg) translateZ(75px);
+            background-color: rgba(255, 14, 5, 0.5);
+        }
+
+        .bottom2 {
+            transform: rotateX(-90deg) translateZ(75px);
+            background-color: rgba(255, 189, 22, 0.5);
+        }
+
+        .left2 {
+            transform: rotateY(90deg) translateZ(75px);
+            background-color: rgba(183, 255, 33, 0.5);
+        }
+
+        .right2 {
+            transform: rotateY(-90deg) translateZ(75px);
+            background-color: rgba(51, 255, 27, 0.5);
+        }
+
+        .font2 {
+            transform: translateZ(75px);
+            background-color: rgba(19, 245, 255, 0.5);
+        }
+
+        .back2 {
+            transform: rotateY(180deg) translateZ(75px);
+            background-color: rgba(22, 31, 255, 0.5);
+        }
+    /*.box1:hover{*/
+        /*transform: rotateX(360deg) rotateY(360deg) ;*/
+    /*}*/
+        .box1:hover>.top{
+            transform: rotateX(90deg) translateZ(250px);
+        }
+        .box1:hover>.bottom{
+            transform: rotateX(-90deg) translateZ(250px);
+        }
+        .box1:hover>.left{
+            transform: rotateY(90deg) translateZ(250px);
+        }
+        .box1:hover>.right{
+              transform: rotateY(-90deg) translateZ(250px);
+          }
+        .box1:hover>.font{
+            transform: translateZ(250px);
+        }
+        .box1:hover>.back{
+            transform: rotateY(180deg) translateZ(250px);
+        }
+        @keyframes zhao {
+            0%{
+                transform: rotateX(0deg) rotateY(0deg);
+            }
+            100%{
+                transform: rotateX(360deg) rotateY(360deg)
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <div class="box1">
+        <div class="top"><img src="img/1.jpg" width="300px" height="300px"/></div>
+        <div class="bottom"><img src="img/2.jpg" width="300px" height="300px"/></div>
+        <div class="left"><img src="img/3.jpg" width="300px" height="300px"/></div>
+        <div class="right"><img src="img/4.jpg" width="300px" height="300px"/></div>
+        <div class="font"><img src="img/5.jpg" width="300px" height="300px"/></div>
+        <div class="back"><img src="img/6.jpg" width="300px" height="300px"/></div>
+
+        <div class="box2">
+            <div class="top2"><img src="img/7.jpg" width="150px" height="150px"/></div>
+            <div class="bottom2"><img src="img/8.jpg" width="150px" height="150px"/></div>
+            <div class="left2"><img src="img/9.jpg" width="150px" height="150px"/></div>
+            <div class="right2"><img src="img/10.jpg" width="150px" height="150px"/></div>
+            <div class="font2"><img src="img/11.jpg" width="150px" height="150px"/></div>
+            <div class="back2"><img src="img/12.jpg" width="150px" height="150px"/></div>
+        </div>
+</div>
+</div>
+
+</body>
+</html>
